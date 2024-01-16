@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Binggrae', Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 500px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 15px;
+    background-color: #fff;
+    position: relative;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.progress-fill::after {
+    content: '';
+    width: 30px;
+    height: 42px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-image: url(/2.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size:contain;
+}
+.progress-fill::before {
+    content: '';
+    width: 70px;
+    height: 42px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-image: url(/1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #fff;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 13px;
+    padding: 18px 16px;
+    border: 1px solid #ddd;
+}
+
+button:hover,
+button:focus
+ {
+    border-color: #A737FF;
+    color: #A737FF;
+    font-weight: 800;
+}
+
+.result {
+    text-align: left;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.start-page {
+    text-align: center;
+}
+
+.start-button {
+    padding: 15px;
+    background-color: #A737FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #8c21df;
+    color: #fff;
+}
+
+.return-button {
+    padding: 15px;
+    background-color: #A737FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: #8c21df;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    main {
+        width: 100%;
+    }
+
+}

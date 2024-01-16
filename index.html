@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 심리 테스트 SPA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- <h1>MBTI 심리 테스트</h1> -->
+    </header>
+
+    <main>
+        <div class="start-page">
+            <!-- <h2>MBTI 심리 테스트에 오신 것을 환영합니다!</h2> -->
+            <p>지금까지 <span id="participantCount">0</span>명이 테스트를 시작했습니다.</p>
+            <button class="start-button" onclick="startTest()">테스트 시작</button>
+        </div>
+
+        <div class="progress-bar" style="display: none;">
+            <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <div class="question" style="display: none;">
+            <h2 id="questionText"></h2>
+        </div>
+
+
+        <div class="options" style="display: none;">
+            <!-- 답변 버튼들이 여기에 동적으로 추가될 것입니다. -->
+        </div>
+
+        <div class="result" style="display: none;">
+            <!-- 결과 페이지의 내용이 여기에 표시됩니다. -->
+            <button class="return-button" onclick="returnToStart()">시작 페이지로 돌아가기</button>
+            <button class="share-button" onclick="shareURL()">URL 공유하기</button>
+        </div>
+    </main>
+
+    <script src="questions.json"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
